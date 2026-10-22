@@ -96,7 +96,7 @@ def format_order_line(team: str, total: float, approval: bool, sample: bool) -> 
     approval_text = "no"
     if approval:
         approval_text = "yes"
-        sample_text = "no"
+    sample_text = "no"
     if sample:
         sample_text = "yes"
     return f"{team}: ${total:.2f} | approval: {approval_text} | sample: {sample_text}"
