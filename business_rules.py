@@ -82,7 +82,7 @@ def largest_order(orders: list) -> str:
     largest_team = ""
     largest = 0.0
     for order in orders:
-        total = calulate_order_total(
+        total = calculate_order_total(
             order["shirt_price"], order["shirts"], order["school"]
         )
         if total > largest:
